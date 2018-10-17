@@ -1,0 +1,474 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+html {
+    height: 100%;
+    width: auto;
+    background: #e7e7e7;
+    color: #404447;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('../fonts/Aller_BdIt.ttf')format('truetype');
+}
+
+
+/* -------- Base BODY --------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins Medium';
+    height: 100%;
+    width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: #fff;
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+
+/* menu + main */
+body > section { 
+    display: flex;
+    height: 100%;
+}
+
+/* menu gauche */
+section > nav { 
+    background: #fff;
+    min-width: 250px;
+}
+
+/* -------- Header --------- */
+header section {
+    width: 95%;
+    margin: auto; 
+    display: flex;
+    align-items: center;
+}
+
+header section section {
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+}
+
+header section section a {
+    font-size: 1.2rem;
+    margin-left: 20px;
+    color: #999;
+}
+
+header section section a:focus {
+    color: #535659;
+}
+
+/* photo profil */
+header section section a#photo-profil { 
+    width: 30px;
+    height: 30px;
+    background: #999;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+header h1 a {
+    text-decoration: none;
+    font-size: 3rem;
+    margin-left: 10px;
+    color: #ff445f;
+    font-family: 'Aller';
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/* -------- Menu --------- */
+section > nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    list-style-type: none;
+}
+
+section > nav ul li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: flex;
+    color: #535659;
+    align-items: center;
+    padding-left: 30px;
+    margin-top: 25px;
+    transition: all 0.5s;
+    
+}
+
+section > nav ul li a:hover {
+    color: #ff445f;
+}
+
+section > nav ul li a:focus {
+    padding-right: 40px;
+    margin-left: 30px;
+    color: #ff445f;
+    border-left: 3px #ff445f solid;
+    transition: all 0.5s;
+}
+
+section > nav p {
+    font-family: 'Open sans';
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 25px;
+}
+
+#logout {
+    
+}
+
+#iconlogout {
+    transform: rotate(0.5turn);
+    color : #ff445f;
+}
+
+
+/* -------- Base Main --------- */
+main {
+    display: flex;
+    padding: 12.5px;
+}
+
+/* conteneur 1-4 */
+main > section:first-child article { 
+    margin-bottom: 25px;
+}
+
+/* conteneur 2-3-5 */
+main section section { 
+    display: flex;
+}
+
+/* conteneur 2-3 */
+main section section section { 
+    flex-direction: column;
+}
+
+
+
+/* --------- Articles ---------- */
+/* Tous les articles */
+.article { 
+    background: #fff;
+    width: 283px;
+    height: 367px;
+    margin: 12.5px;
+    border-radius: 5px;
+}
+
+.article p, .article h3 {
+    padding: 25px;
+}
+
+/* article 2-3 */
+.ventes { 
+    height: 171px;
+}
+
+
+/* ------- Articles ventes ------- */
+h3 + section > p:first-child {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.ventes p {
+    padding: 0 15px 0 25px;
+}
+
+.ventes section {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+i[class^="fas fa-arrow"] {
+    color: #fff;
+    width: 31px;
+    text-align: center;
+    padding: 8px 21px;
+    border-radius: 5px;
+}
+
+.ventes:first-child i[class^="fas fa-arrow"] {
+    background: #fbe15f;
+}
+
+.ventes:last-child i[class^="fas fa-arrow"] {
+    background: #49e394;
+    transform: rotate(0.5turn);
+}
+
+/* barre vide */
+[class^="barreap"]  { 
+    width: 283px;
+    background: #a9afb6;
+}
+
+/* barre pleine */
+.ventes section div:first-child { 
+    z-index: 1;
+}
+
+.barreap {
+    height: 5px;
+    position: absolute;
+    top: calc(100% + 51px);
+}
+
+.ventes .zero {
+    width: 5%;
+    background: red;
+}
+
+.jaune {
+    width: 65%;
+    background: #fbe15f;
+    transition: all 2s;
+}
+
+.vert {
+    width: 75%;
+    background: #49e394;
+    transition: all 2s;
+}
+
+.ventes div:nth-child(2) {
+    color: red;
+    position: absolute;
+    text-align: center;
+    top: calc(100% + 18px);
+    left: calc(5% - 40px);
+}
+
+.transition {
+    transition: all 2s;
+}
+
+
+/* -------- Slideshow -------- */
+/* conteneur slider */
+#slideshow { 
+    width: 591px;
+}
+
+#slideshow img {
+    border-radius: 5px;
+}
+
+#slideshow h2, #slideshow nav { 
+    text-align: center;
+}
+
+#slideshow nav {
+    position: relative;
+    bottom: 12%;
+}
+
+#slideshow nav a {
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 2px;
+}
+
+#slideshow nav a:focus {
+    color: #39bdf5;
+    transition: all 0.5s;
+}
+
+#slideshow h2 {
+    position: absolute;
+    bottom: calc(100% - 345px);
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    background: rgba(50, 50, 50, 0.3);
+    width: 591px;
+    padding: 30px 0px; 
+}
+
+
+/* --------- Cercle ---------- */
+#graphic div {
+    position: relative;
+    width: 136px;
+    height: 136px;
+    margin: auto;
+    display: flex;
+}
+
+#graphic div div:nth-child(1) {
+    background: #fbe15f;
+}
+
+#graphic div div:nth-child(2) {
+    background: #49e394;
+    transform: rotate(0.5turn);
+}
+
+#graphic div div:nth-child(3) {
+    position: absolute;
+    background: #fff;
+    border-radius: 68px 68px;
+    width: 116px;
+    height: 116px;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#graphic div p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cercle {
+    width: 68px;
+    height: 100%;
+    border-radius: 68px 0 0 68px;
+}
+
+
+
+
+/* ---------- Medias queries ----------- */
+/* ----------- écran < 1200 px ------------- */
+@media only screen and (max-width: 1200px) {
+    body {
+        width: 885px;
+        height: 1200px;
+        margin: auto;
+    }
+
+    section > nav { /* menu gauche */
+        background: #fff;
+        min-width: 245px;
+    }
+
+    main > section:first-child { /* conteneur 1-4 */
+        order: 1;
+    }
+
+    main section section section { /* conteneur 2-3 */
+        order: 1;
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    main > section:first-child { /* conteneur 1-4 */
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+    
+    
+/* ----------- écran < 900 px ------------- */
+@media only screen and (max-width: 900px) {
+
+    body {
+        width: 750px;
+    }
+
+    section > nav p {
+        display: none;
+    }
+
+    section > nav { /* menu gauche */
+        min-width: 110px;
+    }
+    
+}  
+    
+    
+    
+/* ----------- écran < 768 px ------------- */
+@media only screen and (max-width: 768px) {
+
+    body {
+        width: 720px;
+    }
+
+    section > nav p {
+        display: none;
+    }
+
+    section > nav { /* menu gauche */
+        min-width: 80px;
+    }
+
+    section > nav ul li a:focus {
+        margin-left: 0;
+    }
+    
+}  
+    
+    
+    
+/* ----------- écran < 740 px ------------- */
+@media only screen and (max-width: 740px) {
+
+    body {
+        width: 100%;
+    }
+    
+    body > section { /* menu + main */
+       flex-direction: column;
+    } 
+    
+    main {
+        justify-content: center;
+    }
+    
+    section > nav {
+        flex-direction: column;
+    }
+    
+     section > nav ul {
+        flex-direction: row;
+        width: 590px;
+         margin: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+   
+    section > nav ul li a {
+        margin: auto;
+        padding: 10px 20px;
+        border-bottom: 3px #fff solid;
+    }
+    
+    section > nav ul li a:focus {
+    margin: 0;
+    border: 0;
+    padding-right: 20px;
+    border-bottom: 3px #ff445f solid;
+}
+    
+    #slideshow h2 {
+    bottom: calc(100% - 375px);
+}
+    
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <!-- référencement -->
+        <meta name="description" content="Free Web tutorials">
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+        <!-- pour charger les icônes sur font awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <!-- pour charger la police sur google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+        <title>Goweb-Dashboard</title>
+        <!-- pour le responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <header>
+            <section>
+                <h1><a href="index.html">Titre.</a></h1>
+                <section>
+                    <a href="#" id="loupe"><i class="fas fa-search fa-1x"></i></a>
+                    <a href="#" id="cloche"><i class="far fa-bell fa-1x"></i></a>
+                    <a href="#" id="mail"><i class="far fa-envelope fa-1x"></i></a>
+                    <a href="#" id="photo-profil"></a>
+                    <a href="#" id="fleche-profil"><i class="fas fa-angle-down fa-1x"></i></a>
+                </section>
+            </section>
+        </header>
+        
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fas fa-th-large fa-1x"></i><p>Dashboard</p></a></li> 
+                    <li><a href="#"><i class="far fa-calendar-minus fa-1x"></i><p>Mes tâches</p></a></li>
+                    <li><a href="#"><i class="far fa-folder-open "></i><p>Mes projets</p></a></li>
+                    <li><a href="#"><i class="far fa-address-book fa-1x"></i><p>Mes clients</p></a></li>
+                    <li><a href="#"><i class="fas fa-chart-line"></i><p>Résultats</p></a></li>
+                    <li><a href="#"><i class="fas fa-file-invoice-dollar fa-1x"></i><p>Facturation</p></a></li>
+                    <li><a href="#"><i class="fas fa-question fa-1x"></i><p>Aide</p></a></li>
+                    <li id="logout"><a href="#"><i id="iconlogout" class="fas fa-sign-out-alt"></i><p>Déconnexion</p></a></li>
+                </ul>
+            </nav>
+            
+            <main>
+                <section>
+                    <article class="article">
+                        <!-- Numéro 1 -->
+                        <h3>Du texte</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    </article>
+                    <!-- Numéro 4 -->
+                    <article class="article" id="graphic"> 
+                        <h3>Un graphique cool</h3>
+                        
+                        <div>
+                            <div class="cercle"></div>
+                            <div class="cercle"></div>
+                            <div><p>50%</p></div> 
+                        </div>
+                        <p>Ce graphique est fait en pur CSS.</p>
+                    </article>
+                </section>
+                
+                <section>
+                    <article id="slideshow" class="article"> <!-- Numéro 6 -->
+                        <h2>pont blanc sur plage</h2>
+                        <img src="img/pont-blanc-plage.jpg" alt="pont-blanc-plage"/>
+                        <nav>
+                            <a href="#"><i class="fas fa-circle fa-2x"></i></a>
+                            <a href="#"><i class="fas fa-circle fa-2x"></i></a>
+                            <a href="#"><i class="fas fa-circle fa-2x"></i></a>
+                        </nav>
+                    </article>
+
+                    <section>
+                        <section>
+                            <!-- Numéro 2 -->
+                            <article class="article ventes"> 
+                                <h3>Ventes du mois</h3>
+                                <section>
+                                    <p>20 54 1</p>
+                                    <p><i class="fas fa-arrow-down fa-2x"></i></p>
+                                </section>
+                                
+                                <section>
+                                    <!-- barre mobile -->
+                                    <div class="barreap zero" id="barremois"></div> 
+                                    <div id="pourcentmoisarrow">
+                                        <p id="poucentmois">65%</p>
+                                        <i class="fas fa-caret-up"></i>
+                                    </div>
+                                    <!-- barre Arrière plan -->
+                                    <div class="barreap"></div> 
+                                </section>
+                                
+                            </article>
+                            <!-- Numéro 3 -->
+                            <article class="article ventes"> 
+                                <h3>Ventes de l'année</h3>
+                                <section>
+                                    <p>20 54 125</p>
+                                    <p><i class="fas fa-arrow-down fa-2x"></i></p>
+                                </section>
+                                
+                                <section>
+                                    <!-- barre mobile -->
+                                    <div class="barreap zero" id="barreannee"></div> 
+                                    <div id="pourcentanneearrow">
+                                        <p id="pourcentannee">75%</p>
+                                        <i class="fas fa-caret-up"></i>
+                                    </div>
+                                    <!-- barre Arrière plan -->
+                                    <div class="barreap"></div> 
+                                </section>
+                                
+                            </article>
+                        </section>
+
+                        <article class="article">
+                            <!-- Numéro 5 -->
+                            <h3>Du texte</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                        </article>
+                    </section>
+                </section>
+            </main>
+        </section>
+        <script src="js/script.js"></script>
+    </body>
+    
+</html>
